@@ -8,7 +8,9 @@ This jQuery plugin allows changing navigation menu style for devices with small 
 Download adaptivemenu.jquery.js file.
 Include the plugin on a page.
 
-	<script src="adaptivemenu.jquery.js"></script>
+```html
+<script src="adaptivemenu.jquery.js"></script>
+```
 
 Include the jQuery library **before** this plugin.
 Add hidden CSS class to you stylesheet

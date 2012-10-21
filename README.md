@@ -50,6 +50,7 @@ $(function() {
 ## Methods
 
 `show` Opens the menu and hides the link
+
 `hide` Hides the menu and shows the link
 
 **Example**

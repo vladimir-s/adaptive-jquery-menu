@@ -37,17 +37,32 @@ You can set properties in the `adaptiveMenu()` method.
 $(function() {
 	$('#menuId').adaptiveMenu({
 		'width': 481,
-		'text': 'Show menu'
+		'text': 'Show menu',
+		'openMenuLinkClass': 'adaptiveMenuTrigger'
 	});
 });
 ```
 
 `width` property defines maximum screen width at which menu will be replaced with a link
 `text` link anchor
+`openMenuLinkClass` link CSS class
+
+## Methods
+
+`show` Opens the menu and hides the link
+`hide` Hides the menu and shows the link
+
+**Example**
+
+```javascript
+$(function() {
+	$('#menuId').adaptiveMenu({'show'});
+});
+```
 
 ## How it works
 
-This plugin checks screen width and if it is lower than width value (`481px` by default), it adds hidden CSS class to the menu. Then it inserts a link with anchor from text and `adaptiveMenuTrigger` id attribute. When you click on the link, the plugin removes hidden class from menu and adds it to the link.
+This plugin checks screen width and if it is lower than width value (`481px` by default), it adds hidden CSS class to the menu. Then it inserts a link with anchor from text and `adaptiveMenuTrigger` class attribute. When you click on the link, the plugin removes hidden class from menu and adds it to the link.
 
 ## Example
 
